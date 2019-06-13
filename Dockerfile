@@ -9,8 +9,8 @@ WORKDIR $APP_HOME
 # Bundle path to cache
 ENV BUNDLE_GEMFILE=$APP_HOME/Gemfile \
   BUNDLE_JOBS=2 \
-  BUNDLE_PATH=/bundle \
-  GEM_HOME=/bundle
+  BUNDLE_PATH=/usr/local/bundle \
+  GEM_HOME=/usr/local/bundle
 
 ADD Gemfile* $APP_HOME/
 RUN gem update --system
