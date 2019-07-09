@@ -14,5 +14,12 @@
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+import Rails from 'rails-ujs';
+import Turbolinks from 'turbolinks';
 
-console.log('Hello World from Webpacker')
+Rails.start();
+Turbolinks.start();
+
+$(function () {
+  console.log('Hello World from Webpacker')
+});
